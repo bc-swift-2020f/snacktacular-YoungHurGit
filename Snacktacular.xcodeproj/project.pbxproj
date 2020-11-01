@@ -15,6 +15,9 @@
 		EC49CD69254F544700AFDCA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC49CD68254F544700AFDCA3 /* Assets.xcassets */; };
 		EC49CD6C254F544700AFDCA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC49CD6A254F544700AFDCA3 /* LaunchScreen.storyboard */; };
 		EC9F1C67254F56DE0021F07B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC9F1C66254F56DE0021F07B /* GoogleService-Info.plist */; };
+		EC9F1C6B254F5CDD0021F07B /* SpotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F1C6A254F5CDD0021F07B /* SpotListViewController.swift */; };
+		EC9F1C6E254F5DED0021F07B /* SpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F1C6D254F5DED0021F07B /* SpotTableViewCell.swift */; };
+		EC9F1C90254F618D0021F07B /* SpotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F1C8F254F618D0021F07B /* SpotDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		EC49CD6B254F544700AFDCA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC49CD6D254F544700AFDCA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC9F1C66254F56DE0021F07B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		EC9F1C6A254F5CDD0021F07B /* SpotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotListViewController.swift; sourceTree = "<group>"; };
+		EC9F1C6D254F5DED0021F07B /* SpotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotTableViewCell.swift; sourceTree = "<group>"; };
+		EC9F1C8F254F618D0021F07B /* SpotDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,9 @@
 				EC49CD5F254F544600AFDCA3 /* AppDelegate.swift */,
 				EC49CD61254F544600AFDCA3 /* SceneDelegate.swift */,
 				EC49CD63254F544600AFDCA3 /* LoginViewController.swift */,
+				EC9F1C6A254F5CDD0021F07B /* SpotListViewController.swift */,
+				EC9F1C6D254F5DED0021F07B /* SpotTableViewCell.swift */,
+				EC9F1C8F254F618D0021F07B /* SpotDetailViewController.swift */,
 				EC49CD65254F544600AFDCA3 /* Main.storyboard */,
 				EC49CD68254F544700AFDCA3 /* Assets.xcassets */,
 				EC49CD6A254F544700AFDCA3 /* LaunchScreen.storyboard */,
@@ -227,8 +236,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9F1C6B254F5CDD0021F07B /* SpotListViewController.swift in Sources */,
 				EC49CD64254F544600AFDCA3 /* LoginViewController.swift in Sources */,
 				EC49CD60254F544600AFDCA3 /* AppDelegate.swift in Sources */,
+				EC9F1C90254F618D0021F07B /* SpotDetailViewController.swift in Sources */,
+				EC9F1C6E254F5DED0021F07B /* SpotTableViewCell.swift in Sources */,
 				EC49CD62254F544600AFDCA3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
