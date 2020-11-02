@@ -21,6 +21,7 @@
 		EC9F1CF1254F6ABD0021F07B /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F1CF0254F6ABD0021F07B /* Spot.swift */; };
 		ECD3C6A0254F83730041C615 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3C69F254F83730041C615 /* UIViewController+alert.swift */; };
 		ECD3C6E1254F87F50041C615 /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3C6E0254F87F50041C615 /* Spots.swift */; };
+		ECD3C79E254F91BD0041C615 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3C79D254F91BD0041C615 /* APIKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		EC9F1CF0254F6ABD0021F07B /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
 		ECD3C69F254F83730041C615 /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
 		ECD3C6E0254F87F50041C615 /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
+		ECD3C79D254F91BD0041C615 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				EC9F1C6D254F5DED0021F07B /* SpotTableViewCell.swift */,
 				EC9F1C8F254F618D0021F07B /* SpotDetailViewController.swift */,
 				ECD3C69F254F83730041C615 /* UIViewController+alert.swift */,
+				ECD3C79D254F91BD0041C615 /* APIKeys.swift */,
 				EC49CD65254F544600AFDCA3 /* Main.storyboard */,
 				EC49CD68254F544700AFDCA3 /* Assets.xcassets */,
 				EC49CD6A254F544700AFDCA3 /* LaunchScreen.storyboard */,
@@ -251,6 +254,7 @@
 				EC9F1C90254F618D0021F07B /* SpotDetailViewController.swift in Sources */,
 				ECD3C6E1254F87F50041C615 /* Spots.swift in Sources */,
 				EC9F1C6E254F5DED0021F07B /* SpotTableViewCell.swift in Sources */,
+				ECD3C79E254F91BD0041C615 /* APIKeys.swift in Sources */,
 				EC9F1CF1254F6ABD0021F07B /* Spot.swift in Sources */,
 				EC49CD62254F544600AFDCA3 /* SceneDelegate.swift in Sources */,
 				ECD3C6A0254F83730041C615 /* UIViewController+alert.swift in Sources */,
