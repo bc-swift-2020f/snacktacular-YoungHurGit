@@ -14,6 +14,7 @@
 		EC49CD67254F544600AFDCA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC49CD65254F544600AFDCA3 /* Main.storyboard */; };
 		EC49CD69254F544700AFDCA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC49CD68254F544700AFDCA3 /* Assets.xcassets */; };
 		EC49CD6C254F544700AFDCA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC49CD6A254F544700AFDCA3 /* LaunchScreen.storyboard */; };
+		EC52C3682555DCB500A0F724 /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52C3672555DCB500A0F724 /* ReviewTableViewController.swift */; };
 		EC9F1C67254F56DE0021F07B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC9F1C66254F56DE0021F07B /* GoogleService-Info.plist */; };
 		EC9F1C6B254F5CDD0021F07B /* SpotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F1C6A254F5CDD0021F07B /* SpotListViewController.swift */; };
 		EC9F1C6E254F5DED0021F07B /* SpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F1C6D254F5DED0021F07B /* SpotTableViewCell.swift */; };
@@ -36,6 +37,7 @@
 		EC49CD68254F544700AFDCA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC49CD6B254F544700AFDCA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC49CD6D254F544700AFDCA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC52C3672555DCB500A0F724 /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
 		EC9F1C66254F56DE0021F07B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		EC9F1C6A254F5CDD0021F07B /* SpotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotListViewController.swift; sourceTree = "<group>"; };
 		EC9F1C6D254F5DED0021F07B /* SpotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotTableViewCell.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				EC9F1C6A254F5CDD0021F07B /* SpotListViewController.swift */,
 				EC9F1C6D254F5DED0021F07B /* SpotTableViewCell.swift */,
 				EC9F1C8F254F618D0021F07B /* SpotDetailViewController.swift */,
+				EC52C3672555DCB500A0F724 /* ReviewTableViewController.swift */,
 				ECD3C69F254F83730041C615 /* UIViewController+alert.swift */,
 				ECD3C79D254F91BD0041C615 /* APIKeys.swift */,
 				EC49CD65254F544600AFDCA3 /* Main.storyboard */,
@@ -252,6 +255,7 @@
 				EC49CD64254F544600AFDCA3 /* LoginViewController.swift in Sources */,
 				EC49CD60254F544600AFDCA3 /* AppDelegate.swift in Sources */,
 				EC9F1C90254F618D0021F07B /* SpotDetailViewController.swift in Sources */,
+				EC52C3682555DCB500A0F724 /* ReviewTableViewController.swift in Sources */,
 				ECD3C6E1254F87F50041C615 /* Spots.swift in Sources */,
 				EC9F1C6E254F5DED0021F07B /* SpotTableViewCell.swift in Sources */,
 				ECD3C79E254F91BD0041C615 /* APIKeys.swift in Sources */,
