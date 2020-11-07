@@ -14,6 +14,7 @@
 		EC49CD67254F544600AFDCA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC49CD65254F544600AFDCA3 /* Main.storyboard */; };
 		EC49CD69254F544700AFDCA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC49CD68254F544700AFDCA3 /* Assets.xcassets */; };
 		EC49CD6C254F544700AFDCA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC49CD6A254F544700AFDCA3 /* LaunchScreen.storyboard */; };
+		EC5250E3255710CF00426BCA /* SpotReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5250E2255710CF00426BCA /* SpotReviewTableViewCell.swift */; };
 		EC52C3682555DCB500A0F724 /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52C3672555DCB500A0F724 /* ReviewTableViewController.swift */; };
 		EC52C482255606C600A0F724 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52C481255606C600A0F724 /* Review.swift */; };
 		EC52C59C2556220C00A0F724 /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52C59B2556220C00A0F724 /* Reviews.swift */; };
@@ -39,6 +40,7 @@
 		EC49CD68254F544700AFDCA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC49CD6B254F544700AFDCA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC49CD6D254F544700AFDCA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC5250E2255710CF00426BCA /* SpotReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotReviewTableViewCell.swift; sourceTree = "<group>"; };
 		EC52C3672555DCB500A0F724 /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
 		EC52C481255606C600A0F724 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		EC52C59B2556220C00A0F724 /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				EC9F1C6A254F5CDD0021F07B /* SpotListViewController.swift */,
 				EC9F1C6D254F5DED0021F07B /* SpotTableViewCell.swift */,
 				EC9F1C8F254F618D0021F07B /* SpotDetailViewController.swift */,
+				EC5250E2255710CF00426BCA /* SpotReviewTableViewCell.swift */,
 				EC52C3672555DCB500A0F724 /* ReviewTableViewController.swift */,
 				ECD3C69F254F83730041C615 /* UIViewController+alert.swift */,
 				ECD3C79D254F91BD0041C615 /* APIKeys.swift */,
@@ -266,6 +269,7 @@
 				EC52C482255606C600A0F724 /* Review.swift in Sources */,
 				ECD3C6E1254F87F50041C615 /* Spots.swift in Sources */,
 				EC9F1C6E254F5DED0021F07B /* SpotTableViewCell.swift in Sources */,
+				EC5250E3255710CF00426BCA /* SpotReviewTableViewCell.swift in Sources */,
 				ECD3C79E254F91BD0041C615 /* APIKeys.swift in Sources */,
 				EC9F1CF1254F6ABD0021F07B /* Spot.swift in Sources */,
 				EC49CD62254F544600AFDCA3 /* SceneDelegate.swift in Sources */,

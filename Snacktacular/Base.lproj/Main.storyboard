@@ -280,7 +280,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReviewCell" id="U6s-AU-ORJ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReviewCell" id="U6s-AU-ORJ" customClass="SpotReviewTableViewCell" customModule="Snacktacular" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="408" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U6s-AU-ORJ" id="Y13-n1-39g">
@@ -367,6 +367,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="reviewTextLabel" destination="2GK-W2-8fO" id="ntB-ce-l10"/>
+                                            <outlet property="reviewTitleLabel" destination="ilT-bv-mOH" id="MN4-h4-LJS"/>
                                             <segue destination="aEF-mx-8b7" kind="show" identifier="ShowReview" id="xdh-P5-l2k"/>
                                         </connections>
                                     </tableViewCell>
@@ -836,7 +838,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="xdh-P5-l2k"/>
-        <segue reference="uA8-cC-dkC"/>
+        <segue reference="g8U-Kg-m9p"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
@@ -846,7 +848,7 @@
             <color red="0.93333333333333335" green="0.4823529411764706" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="UI Element Background">
-            <color red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.92100000381469727" green="0.92100000381469727" blue="0.92100000381469727" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
