@@ -18,9 +18,21 @@ class ReviewTableViewController: UITableViewController {
     @IBOutlet weak var reviewDateLabel: UILabel!
     @IBOutlet weak var reviewTextView: UITextView!
     @IBOutlet weak var deleteButton: UIButton!
+    @IBOutlet var starButtonCollection: [UIButton]!
     
     var review: Review!
     var spot: Spot!
+    var rating = 0 {
+        didSet {
+            for starButton in starButtonCollection {
+                let imageName = (starButton.tag < rating ? "star.fill" : "star")
+                starButton.setImage(UIImage(systemName: imageName), for: .normal)
+                starButton.tintColor = (starButton.tag < rating ? .systemRed : .darkText)
+            }
+            print(">> new rating \(rating)")
+            review.rating = rating
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +52,7 @@ class ReviewTableViewController: UITableViewController {
         addressLabel.text = spot.address
         reviewTitleField.text = review.title
         reviewTextView.text = review.text
-        // TODO: Update for rating
+        rating = review.rating // Will update rating stars on load
     }
     
     func updateFromUserInterface() {
@@ -82,6 +94,9 @@ class ReviewTableViewController: UITableViewController {
                 print("😡 ERROR: Can't unwind segue from Review because of a review saving error.")
             }
         }
+    }
+    @IBAction func starButtonPressed(_ sender: UIButton) {
+        rating = sender.tag + 1
     }
     
 }
