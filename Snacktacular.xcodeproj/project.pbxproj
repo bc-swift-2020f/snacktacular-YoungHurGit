@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A6D19254960D1763F61150A3 /* Pods_Snacktacular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5739B9C3D446B853902C07C4 /* Pods_Snacktacular.framework */; };
+		EC10F29925605ED100347B24 /* UIView+addBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC10F29825605ED100347B24 /* UIView+addBorder.swift */; };
+		EC10F29C25605F3800347B24 /* UIBarButtonItem+Hide.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC10F29B25605F3800347B24 /* UIBarButtonItem+Hide.swift */; };
 		EC49CD60254F544600AFDCA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC49CD5F254F544600AFDCA3 /* AppDelegate.swift */; };
 		EC49CD62254F544600AFDCA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC49CD61254F544600AFDCA3 /* SceneDelegate.swift */; };
 		EC49CD64254F544600AFDCA3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC49CD63254F544600AFDCA3 /* LoginViewController.swift */; };
@@ -32,6 +34,8 @@
 		2EDDC20A160EC0206184DFD4 /* Pods-Snacktacular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snacktacular.debug.xcconfig"; path = "Target Support Files/Pods-Snacktacular/Pods-Snacktacular.debug.xcconfig"; sourceTree = "<group>"; };
 		5739B9C3D446B853902C07C4 /* Pods_Snacktacular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snacktacular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9534E7F1BF773B4F092F02B2 /* Pods-Snacktacular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snacktacular.release.xcconfig"; path = "Target Support Files/Pods-Snacktacular/Pods-Snacktacular.release.xcconfig"; sourceTree = "<group>"; };
+		EC10F29825605ED100347B24 /* UIView+addBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addBorder.swift"; sourceTree = "<group>"; };
+		EC10F29B25605F3800347B24 /* UIBarButtonItem+Hide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Hide.swift"; sourceTree = "<group>"; };
 		EC49CD5C254F544600AFDCA3 /* Snacktacular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snacktacular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC49CD5F254F544600AFDCA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC49CD61254F544600AFDCA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 				EC5250E2255710CF00426BCA /* SpotReviewTableViewCell.swift */,
 				EC52C3672555DCB500A0F724 /* ReviewTableViewController.swift */,
 				ECD3C69F254F83730041C615 /* UIViewController+alert.swift */,
+				EC10F29825605ED100347B24 /* UIView+addBorder.swift */,
+				EC10F29B25605F3800347B24 /* UIBarButtonItem+Hide.swift */,
 				ECD3C79D254F91BD0041C615 /* APIKeys.swift */,
 				EC49CD65254F544600AFDCA3 /* Main.storyboard */,
 				EC49CD68254F544700AFDCA3 /* Assets.xcassets */,
@@ -268,12 +274,14 @@
 				EC52C3682555DCB500A0F724 /* ReviewTableViewController.swift in Sources */,
 				EC52C482255606C600A0F724 /* Review.swift in Sources */,
 				ECD3C6E1254F87F50041C615 /* Spots.swift in Sources */,
+				EC10F29C25605F3800347B24 /* UIBarButtonItem+Hide.swift in Sources */,
 				EC9F1C6E254F5DED0021F07B /* SpotTableViewCell.swift in Sources */,
 				EC5250E3255710CF00426BCA /* SpotReviewTableViewCell.swift in Sources */,
 				ECD3C79E254F91BD0041C615 /* APIKeys.swift in Sources */,
 				EC9F1CF1254F6ABD0021F07B /* Spot.swift in Sources */,
 				EC49CD62254F544600AFDCA3 /* SceneDelegate.swift in Sources */,
 				ECD3C6A0254F83730041C615 /* UIViewController+alert.swift in Sources */,
+				EC10F29925605ED100347B24 /* UIView+addBorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
