@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Snacktacular" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -34,7 +34,7 @@
             <objects>
                 <viewController id="UUj-kO-dF4" customClass="SpotListViewController" customModule="Snacktacular" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gld-aa-ebM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YEc-Vh-sZI">
@@ -164,14 +164,19 @@
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Restaurant Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1nB-Vc-efQ">
                                             <rect key="frame" x="8" y="8" width="398" height="33"/>
+                                            <color key="backgroundColor" name="UI Element Background"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="33" id="smb-ry-xD1"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="24"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="nameFieldChanged:" destination="1io-Je-cX9" eventType="editingChanged" id="C8b-wD-uea"/>
+                                            </connections>
                                         </textField>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Address" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uE1-fz-M9G">
                                             <rect key="frame" x="8" y="43" width="398" height="17"/>
+                                            <color key="backgroundColor" name="UI Element Background"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="17" id="ZNR-8z-nGH"/>
                                             </constraints>
@@ -397,13 +402,13 @@
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" id="Gws-0p-mv1">
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="Gws-0p-mv1">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="RKv-xa-Hs0">
                             <connections>
                                 <action selector="cancelButtonPressed:" destination="1io-Je-cX9" id="Ivv-Nf-q8x"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="UFj-AO-EH4">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="UFj-AO-EH4">
                             <connections>
                                 <action selector="saveButtonPressed:" destination="1io-Je-cX9" id="L0U-UM-BKg"/>
                             </connections>
@@ -412,9 +417,11 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addressTextField" destination="uE1-fz-M9G" id="Qvl-xv-g65"/>
+                        <outlet property="cancelBarButton" destination="RKv-xa-Hs0" id="8Bf-Wr-8HZ"/>
                         <outlet property="mapView" destination="dhf-wL-phD" id="J16-47-Z9W"/>
                         <outlet property="nameTextField" destination="1nB-Vc-efQ" id="NG2-Jb-2TW"/>
                         <outlet property="ratingLabel" destination="0XL-aU-3p5" id="F0V-FX-rlO"/>
+                        <outlet property="saveBarButton" destination="UFj-AO-EH4" id="65l-1b-Vt6"/>
                         <outlet property="tableView" destination="tye-Om-qcx" id="sth-Tv-nz7"/>
                         <segue destination="mlg-1u-Ida" kind="presentation" identifier="AddReview" modalPresentationStyle="fullScreen" id="7dS-vU-kYq"/>
                     </connections>
