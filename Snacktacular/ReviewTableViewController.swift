@@ -54,6 +54,7 @@ class ReviewTableViewController: UITableViewController {
             print("ERROR: No spot passed to ReviewTableViewController.swift")
             return
         }
+        
         if review == nil {
             review = Review()
         }

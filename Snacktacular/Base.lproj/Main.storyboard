@@ -203,6 +203,9 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                     </collectionViewCellContentView>
+                                                    <connections>
+                                                        <segue destination="zMd-wd-viH" kind="show" identifier="ShowPhoto" id="1sF-Q5-m07"/>
+                                                    </connections>
                                                 </collectionViewCell>
                                             </cells>
                                         </collectionView>
@@ -241,7 +244,7 @@
                                                 <action selector="ratingButtonPressed:" destination="1io-Je-cX9" eventType="touchUpInside" id="6yr-R6-epb"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zky-GF-g5g">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zky-GF-g5g" userLabel="Photo">
                                             <rect key="frame" x="218" y="346" width="90" height="29"/>
                                             <color key="backgroundColor" name="PrimaryColor"/>
                                             <constraints>
@@ -253,6 +256,9 @@
                                             <state key="normal" title=" Photo" image="camera.fill" catalog="system">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="photoButtonPressed:" destination="1io-Je-cX9" eventType="touchUpInside" id="wKF-G6-cyj"/>
+                                            </connections>
                                         </button>
                                         <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dhf-wL-phD">
                                             <rect key="frame" x="0.0" y="62" width="414" height="180"/>
@@ -424,6 +430,7 @@
                         <outlet property="saveBarButton" destination="UFj-AO-EH4" id="65l-1b-Vt6"/>
                         <outlet property="tableView" destination="tye-Om-qcx" id="sth-Tv-nz7"/>
                         <segue destination="mlg-1u-Ida" kind="presentation" identifier="AddReview" modalPresentationStyle="fullScreen" id="7dS-vU-kYq"/>
+                        <segue destination="bNY-cf-yv0" kind="presentation" identifier="AddPhoto" modalPresentationStyle="fullScreen" id="rsI-EX-uaV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fU-f5-c9F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -776,6 +783,47 @@
             </objects>
             <point key="canvasLocation" x="6366.666666666667" y="87.723214285714278"/>
         </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="FBR-Da-aOi">
+            <objects>
+                <viewController id="zMd-wd-viH" customClass="PhotoViewController" customModule="Snacktacular" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jX0-tn-SnL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="keT-Xn-uWF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="6Ik-OU-jIu"/>
+                        <barButtonItem systemItem="trash" id="yi2-fh-2tC">
+                            <connections>
+                                <action selector="deleteButtonPressed:" destination="zMd-wd-viH" id="oOx-WF-QON"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="PQn-m9-OoN">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="zq5-Zw-b0u">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="zMd-wd-viH" id="A0T-bZ-Ndn"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="8lb-fS-aaN">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="zMd-wd-viH" id="aKe-Mb-h7P"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="cancelBarButton" destination="zq5-Zw-b0u" id="yO2-Hr-t0r"/>
+                        <outlet property="deleteBarButton" destination="yi2-fh-2tC" id="kXU-8n-vFA"/>
+                        <outlet property="saveBarButton" destination="8lb-fS-aaN" id="O8k-L0-coi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ReS-e8-5Po" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6367" y="849"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="bFA-cU-aOa">
             <objects>
@@ -865,8 +913,35 @@
             </objects>
             <point key="canvasLocation" x="5380" y="-714"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="y3b-4U-Mig">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bNY-cf-yv0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jgO-Z5-DKi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="PrimaryColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zMd-wd-viH" kind="relationship" relationship="rootViewController" id="nVW-Nv-9Qb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PXL-uz-Uuw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5380" y="1037"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="1sF-Q5-m07"/>
         <segue reference="xdh-P5-l2k"/>
         <segue reference="g8U-Kg-m9p"/>
     </inferredMetricsTieBreakers>
