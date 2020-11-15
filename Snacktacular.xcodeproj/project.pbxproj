@@ -11,6 +11,7 @@
 		EC10F29925605ED100347B24 /* UIView+addBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC10F29825605ED100347B24 /* UIView+addBorder.swift */; };
 		EC10F29C25605F3800347B24 /* UIBarButtonItem+Hide.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC10F29B25605F3800347B24 /* UIBarButtonItem+Hide.swift */; };
 		EC10F43225607F6B00347B24 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC10F43125607F6B00347B24 /* PhotoViewController.swift */; };
+		EC10F4352560ABD400347B24 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC10F4342560ABD400347B24 /* Photo.swift */; };
 		EC49CD60254F544600AFDCA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC49CD5F254F544600AFDCA3 /* AppDelegate.swift */; };
 		EC49CD62254F544600AFDCA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC49CD61254F544600AFDCA3 /* SceneDelegate.swift */; };
 		EC49CD64254F544600AFDCA3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC49CD63254F544600AFDCA3 /* LoginViewController.swift */; };
@@ -38,6 +39,7 @@
 		EC10F29825605ED100347B24 /* UIView+addBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addBorder.swift"; sourceTree = "<group>"; };
 		EC10F29B25605F3800347B24 /* UIBarButtonItem+Hide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Hide.swift"; sourceTree = "<group>"; };
 		EC10F43125607F6B00347B24 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		EC10F4342560ABD400347B24 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		EC49CD5C254F544600AFDCA3 /* Snacktacular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snacktacular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC49CD5F254F544600AFDCA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC49CD61254F544600AFDCA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				ECD3C6E0254F87F50041C615 /* Spots.swift */,
 				EC52C481255606C600A0F724 /* Review.swift */,
 				EC52C59B2556220C00A0F724 /* Reviews.swift */,
+				EC10F4342560ABD400347B24 /* Photo.swift */,
 				EC49CD63254F544600AFDCA3 /* LoginViewController.swift */,
 				EC9F1C6A254F5CDD0021F07B /* SpotListViewController.swift */,
 				EC9F1C6D254F5DED0021F07B /* SpotTableViewCell.swift */,
@@ -281,6 +284,7 @@
 				EC9F1C6E254F5DED0021F07B /* SpotTableViewCell.swift in Sources */,
 				EC10F43225607F6B00347B24 /* PhotoViewController.swift in Sources */,
 				EC5250E3255710CF00426BCA /* SpotReviewTableViewCell.swift in Sources */,
+				EC10F4352560ABD400347B24 /* Photo.swift in Sources */,
 				ECD3C79E254F91BD0041C615 /* APIKeys.swift in Sources */,
 				EC9F1CF1254F6ABD0021F07B /* Spot.swift in Sources */,
 				EC49CD62254F544600AFDCA3 /* SceneDelegate.swift in Sources */,
