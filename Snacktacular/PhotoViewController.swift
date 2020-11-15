@@ -109,5 +109,5 @@ class PhotoViewController: UIViewController {
         // TODO: - more setup here
         leaveViewController()
     }
-    
+
 }

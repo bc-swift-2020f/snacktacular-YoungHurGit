@@ -196,14 +196,30 @@
                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             </collectionViewFlowLayout>
                                             <cells>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fay-Kl-MaE">
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="fay-Kl-MaE" customClass="SpotPhotoCollectionViewCell" customModule="Snacktacular" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gX0-CA-0Ic">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                         <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RDk-le-usa">
+                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="100" id="A9u-TK-xtk"/>
+                                                                    <constraint firstAttribute="width" constant="100" id="aqU-gZ-4kl"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="RDk-le-usa" secondAttribute="trailing" id="8Rp-0t-2m1"/>
+                                                            <constraint firstAttribute="bottom" secondItem="RDk-le-usa" secondAttribute="bottom" id="Njt-va-QKP"/>
+                                                            <constraint firstItem="RDk-le-usa" firstAttribute="leading" secondItem="gX0-CA-0Ic" secondAttribute="leading" id="yNU-Sb-Nw4"/>
+                                                            <constraint firstItem="RDk-le-usa" firstAttribute="top" secondItem="gX0-CA-0Ic" secondAttribute="top" id="yaE-1e-D24"/>
+                                                        </constraints>
                                                     </collectionViewCellContentView>
                                                     <connections>
+                                                        <outlet property="photoImageView" destination="RDk-le-usa" id="Zkg-P2-t0H"/>
                                                         <segue destination="zMd-wd-viH" kind="show" identifier="ShowPhoto" id="1sF-Q5-m07"/>
                                                     </connections>
                                                 </collectionViewCell>
@@ -424,6 +440,7 @@
                     <connections>
                         <outlet property="addressTextField" destination="uE1-fz-M9G" id="Qvl-xv-g65"/>
                         <outlet property="cancelBarButton" destination="RKv-xa-Hs0" id="8Bf-Wr-8HZ"/>
+                        <outlet property="collectionView" destination="dzp-4S-icR" id="HUe-5T-hVd"/>
                         <outlet property="mapView" destination="dhf-wL-phD" id="J16-47-Z9W"/>
                         <outlet property="nameTextField" destination="1nB-Vc-efQ" id="NG2-Jb-2TW"/>
                         <outlet property="ratingLabel" destination="0XL-aU-3p5" id="F0V-FX-rlO"/>
@@ -794,13 +811,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQp-YT-d1p">
                                 <rect key="frame" x="8" y="52" width="304" height="15"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="By: Benedict Cumberbatch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThH-nC-s8l">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="By: Benedict Cumberbatch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThH-nC-s8l">
                                         <rect key="frame" x="0.0" y="0.0" width="201.5" height="15"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="On: Dec. 32, 2100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTN-E1-LaX">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On: Dec. 32, 2100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTN-E1-LaX">
                                         <rect key="frame" x="201.5" y="0.0" width="102.5" height="15"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                         <nil key="textColor"/>

@@ -1,15 +1,15 @@
 //
-//  Reviews.swift
+//  Photos.swift
 //  Snacktacular
 //
-//  Created by Young Hur on 11/6/20.
+//  Created by Young Hur on 11/15/20.
 //
 
 import Foundation
 import Firebase
 
-class Reviews {
-    var reviewArray: [Review] = []
+class Photos {
+    var photoArray: [Photo] = []
     var db: Firestore!
     
     init() {
@@ -20,18 +20,18 @@ class Reviews {
         guard spot.documentID != "" else {
             return
         }
-        db.collection("spots").document(spot.documentID).collection("reviews").addSnapshotListener { (querySnapshot, error) in
+        db.collection("spots").document(spot.documentID).collection("photos").addSnapshotListener { (querySnapshot, error) in
             guard error == nil else {
                 print("😡 ERROR: adding the snapshot listener \(error!.localizedDescription)")
                 return completed()
             }
-            self.reviewArray = [] // Clean out existing spotArray since new data will load
+            self.photoArray = [] // Clean out existing spotArray since new data will load
             // There are querySnapshot!.documents.count documents in the snapshot
             for document in querySnapshot!.documents {
                 // You'll have to make sure you have an initializer in the singular class
-                let review = Review(dictionary: document.data())
-                review.documentID = document.documentID
-                self.reviewArray.append(review)
+                let photo = Photo(dictionary: document.data())
+                photo.documentID = document.documentID
+                self.photoArray.append(photo)
             }
             completed()
         }
