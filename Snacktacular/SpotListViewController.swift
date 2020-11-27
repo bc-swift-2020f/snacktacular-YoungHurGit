@@ -71,6 +71,9 @@ class SpotListViewController: UIViewController {
         sortBasedOnSegmentPressed()
     }
     
+    @IBAction func usersButtonPressed(_ sender: UIBarButtonItem) {
+    }
+    
 }
 
 extension SpotListViewController: UITableViewDelegate, UITableViewDataSource {
@@ -144,4 +147,5 @@ extension SpotListViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("😡 ERROR: \(error.localizedDescription). Failed to get device location. ")
     }
+    
 }
